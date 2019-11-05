@@ -10,7 +10,7 @@ namespace Runner.Libraries
     {
         public string UppercaseChars(string input)
         {
-            return new string(input.ToCharArray().Where(c => char.IsUpper(c)).ToArray());
+            return new string(input.ToCharArray().Where(c => char.IsUpper(c)).OrderBy(c => c).ToArray());
         } 
     }
 }
